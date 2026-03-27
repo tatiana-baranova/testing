@@ -1,2 +1,14 @@
-def add(x=0, y=0):
-    return x + y
+class Calc:
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
+
+    def add(self, x=None, y=None):
+        if x is None or y is None:
+            return self.x + self.y
+        else:
+            return x + y
+
+    @staticmethod
+    def mult(x, y):
+        return x * y
