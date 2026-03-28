@@ -10,6 +10,13 @@ class Calc:
         else:
             return x + y
 
+    def average(self, lis):
+        summ = 0
+        for i in lis:
+            summ += i
+        return round(summ / len(lis), 2)
+
+
     @staticmethod
     def mult(x, y):
         return x * y
